@@ -9,6 +9,7 @@ public class KafkaProducerConfig {
   // https://kafka.apache.org/documentation/#producerconfigs
 
   public static Map<String, Object> init(Scope scope) {
+    
     Map<String, Object> propertyMap = new HashMap<>();
     KafkaProducerProperty[] producerProperties = KafkaProducerProperty.values();
 
@@ -28,7 +29,7 @@ public class KafkaProducerConfig {
   }
 
   enum KafkaProducerProperty {
-    
+
     ACKS("acks"), //
     BUFFER_MEMORY("buffer.memory"), //
     COMPRESSION_TYPE("compression.type"), //
