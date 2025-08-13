@@ -23,10 +23,12 @@ public class KafkaProducerConfig {
       }
     }
 
+
     return propertyMap;
   }
 
   enum KafkaProducerProperty {
+    
     ACKS("acks"), //
     BUFFER_MEMORY("buffer.memory"), //
     COMPRESSION_TYPE("compression.type"), //
