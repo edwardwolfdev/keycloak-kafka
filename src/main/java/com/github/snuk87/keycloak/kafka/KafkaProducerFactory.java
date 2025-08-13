@@ -9,6 +9,5 @@ public interface KafkaProducerFactory {
 	Producer<String, String> createProducer(String clientId, String bootstrapServer,
 			Map<String, Object> optionalProperties);
 
-			
 
 }
